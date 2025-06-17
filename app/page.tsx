@@ -12,24 +12,24 @@ export default function HomePage() {
       <header className="bg-slate-800 text-white px-4 py-4">
         <div className="container mx-auto flex items-center justify-between">
           <div className="flex items-center space-x-2">
-            <div className="text-2xl font-bold">GlobeFarer</div>
+            <div className="text-2xl font-bold">Diplomatic Express</div>
             <div className="w-6 h-6 bg-yellow-400 transform rotate-45"></div>
           </div>
 
           <nav className="hidden md:flex items-center space-x-8">
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
+            <Link href="#Home" className="hover:text-yellow-400 transition-colors">
               Home
             </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
+            <Link href="#Pages" className="hover:text-yellow-400 transition-colors">
               Pages
             </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
+            <Link href="#Services" className="hover:text-yellow-400 transition-colors">
               Services
             </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
+            <Link href="#Blog" className="hover:text-yellow-400 transition-colors">
               Blog
             </Link>
-            <Link href="#" className="hover:text-yellow-400 transition-colors">
+            <Link href="#Contact" className="hover:text-yellow-400 transition-colors">
               Contact
             </Link>
           </nav>
@@ -49,7 +49,7 @@ export default function HomePage() {
       </header>
 
       {/* Hero Section */}
-      <section className="relative h-[600px] bg-slate-700 overflow-hidden">
+      <section id='Home' className="relative h-[600px] bg-slate-700 overflow-hidden">
         <Image src="/images/hero-airplane.jpg" alt="Airplane in flight" fill className="object-cover opacity-80" />
         <div className="absolute inset-0 bg-slate-800/50"></div>
 
@@ -78,7 +78,7 @@ export default function HomePage() {
       </section>
 
       {/* Service Tabs */}
-      <section className="bg-slate-700 py-8">
+      <section id='Pages' className="bg-slate-700 py-8">
         <div className="container mx-auto px-4">
           <Tabs defaultValue="land" className="w-full">
             <TabsList className="grid w-full grid-cols-4 bg-transparent h-auto p-0">
@@ -112,7 +112,7 @@ export default function HomePage() {
       </section>
 
       {/* Fast and Reliable Section */}
-      <section className="py-20 bg-gray-50">
+      <section id='Services' className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div>
@@ -139,7 +139,7 @@ export default function HomePage() {
       </section>
 
       {/* Service Highlights */}
-      <section className="py-20">
+      <section id='Blog' className="py-20">
         <div className="container mx-auto px-4">
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             <Card className="text-center p-8 hover:shadow-lg transition-shadow border-t-4 border-t-yellow-400">
@@ -196,7 +196,7 @@ export default function HomePage() {
       </section>
 
       {/* Secure Courier Section */}
-      <section className="py-20 bg-gray-50">
+      <section id='Contact' className="py-20 bg-gray-50">
         <div className="container mx-auto px-4">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -236,13 +236,13 @@ export default function HomePage() {
         />
         <div className="relative container mx-auto px-4 text-center">
           <blockquote className="text-2xl md:text-3xl font-light italic mb-8 max-w-4xl mx-auto">
-            "GlobeFarer has transformed our logistics operations. Their reliable service and advanced tracking system
+            "Diplomatic Express has transformed our logistics operations. Their reliable service and advanced tracking system
             give us complete confidence in our shipments."
           </blockquote>
           <div className="flex items-center justify-center space-x-4">
             <div className="w-12 h-12 bg-yellow-400 rounded-full"></div>
             <div>
-              <div className="font-semibold">Sarah Johnson</div>
+              <div className="font-semibold">Richard Minister</div>
               <div className="text-gray-300">Supply Chain Manager</div>
             </div>
           </div>
